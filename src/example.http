@@ -43,3 +43,76 @@ Content-Type: application/json
     "email_inst_professor": "inst@teste"
     
 }
+
+
+###
+
+POST http://localhost:3333/inatividade HTTP/1:1
+Content-Type: application/json
+
+
+{
+    "data_ini": "2000-02-01" , 
+    "data_fin": "2000-01-01" , 
+    "motivo": "descricao"
+    
+}
+
+###
+
+GET  http://localhost:3333/inatividade HTTP/1:1
+Content-Type: application/json
+
+
+###
+
+DELETE http://localhost:3333/inatividade/1 HTTP/1:1
+Content-Type: application/json
+
+
+###
+
+PUT http://localhost:3333/inatividade/2 HTTP/1:1
+Content-Type: application/json
+
+{
+    "data_ini": "2000-02-01" , 
+    "data_fin": "2000-01-01" , 
+    "motivo": "teste"
+    
+}
+
+
+
+
+###
+
+POST http://localhost:3333/vinculo HTTP/1:1
+Content-Type: application/json
+
+
+{
+    "tipo_vinculo": "descricao2"   
+}
+
+###
+
+GET  http://localhost:3333/vinculo HTTP/1:1
+Content-Type: application/json
+
+
+###
+
+DELETE http://localhost:3333/vinculo/1 HTTP/1:1
+Content-Type: application/json
+
+
+###
+
+PUT http://localhost:3333/vinculo/2 HTTP/1:1
+Content-Type: application/json
+
+{
+    "tipo_vinculo": "teste"
+    
+}

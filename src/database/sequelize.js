@@ -1,8 +1,8 @@
 const {Sequelize} = require('sequelize');
 
-//const Inatividade = require('../models/Inatividade');
-const Professor = require('../models/Professor');
-//const Vinculo = require('../models/Vinculo');
+//const Inatividade = require('../models/inatividade');
+//const Professor = require('../models/Professor');
+const Vinculo = require('../models/vinculo');
 
 const connection = new Sequelize(
     {
@@ -18,7 +18,7 @@ const connection = new Sequelize(
 );
 
 
-Professor.init(connection);
+Vinculo.init(connection);
 
 connection.sync( {alter: true} );
 

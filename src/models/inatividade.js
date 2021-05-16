@@ -11,11 +11,11 @@ class Inatividade extends Model {
         type: DataTypes.DATE,
         allowNull: false,
       },
-      data_fim: {
+      data_fin: {
         type: DataTypes.DATE,
         allowNull: false,
       },
-      descricao_projetos: {
+      motivo: {
         type: DataTypes.STRING(255),
         allowNull: false,
       },
