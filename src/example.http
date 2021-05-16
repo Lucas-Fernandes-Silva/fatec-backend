@@ -1,0 +1,45 @@
+POST http://localhost:3333/professor HTTP/1:1
+Content-Type: application/json
+
+{
+    "nome_professor": "Patricia",
+    "idade_professor": 32,
+    "data_nasc": "2000-01-01" , 
+    "CPF_professor": "1231312141",
+    "RG_professor": "25235252",
+    "celular_professor":"23526464642",
+    "telefone_professor" : "2353523",
+    "email_professor" : "teste@teste",
+    "email_inst_professor": "inst@teste"
+    
+}
+
+###
+
+GET  http://localhost:3333/professor HTTP/1:1
+Content-Type: application/json
+
+
+###
+
+DELETE http://localhost:3333/professor/1 HTTP/1:1
+Content-Type: application/json
+
+
+###
+
+PUT http://localhost:3333/professor/2 HTTP/1:1
+Content-Type: application/json
+
+{
+    "nome_professor": "Rogerio",
+    "idade_professor": 52,
+    "data_nasc": "2000-01-01" , 
+    "CPF_professor": "1231312141",
+    "RG_professor": "25235252",
+    "celular_professor":"23526464642",
+    "telefone_professor" : "2353523",
+    "email_professor" : "teste@teste",
+    "email_inst_professor": "inst@teste"
+    
+}

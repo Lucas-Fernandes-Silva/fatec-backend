@@ -1,5 +1,9 @@
 const {Sequelize} = require('sequelize');
 
+//const Inatividade = require('../models/Inatividade');
+const Professor = require('../models/Professor');
+//const Vinculo = require('../models/Vinculo');
+
 const connection = new Sequelize(
     {
     dialect : 'mysql',
@@ -12,6 +16,9 @@ const connection = new Sequelize(
     }
 }
 );
+
+
+Professor.init(connection);
 
 connection.sync( {alter: true} );
 
